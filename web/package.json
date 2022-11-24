@@ -5,8 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "start": "node build/server.js"
+    "build": "tsc && vite build"
   },
   "devDependencies": {
     "typescript": "^4.6.4",
