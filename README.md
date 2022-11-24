@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://{}">
+    <a href="https://mp-imguploader.netlify.app">
       Demo
     </a>
     <span> | </span>
@@ -26,6 +26,7 @@
 
 - [Overview](#overview)
   - [Built With](#built-with)
+  - [Deploy](#deploy)
 - [Features](#features)
 - [How to use](#how-to-use)
 - [Contact](#contact)
@@ -39,7 +40,8 @@
 
   Well, I guess I will not be so lost the next time I'm required to implement this type of input.
 
-<!-- - Where can I see your demo? -->
+- Where can I see your demo?
+  - https://mp-imguploader.netlify.app
 
 ### Built With
 
@@ -48,6 +50,11 @@
 - [Vite](https://vitejs.dev)
 - [Typescript](https://typescriptlang.org)
 - [Node.js](https://nodejs.org)
+
+### Deploy
+
+- [Netlify](https://www.netlify.com)
+- [Render](https://render.com)
 
 ## Features
 
