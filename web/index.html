@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Noto+Sans:wght@500&family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/944f8aa2f6.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="src/styles/style.css">
+
+  <title>Image Uploader</title>
+</head>
+<body>
+  <main>
+    <!-- Image Upload Card -->
+    <form class="card" data-active="true">
+      <div class="card__header">
+        <div class="card__header--initial-state" data-active="true">
+          <span class="card__header--title">Upload your image</span>
+          <span class="card__header--subtitle">File should be jpeg, png, ...</span>
+        </div>
+
+        <div class="card__header--completed-state" data-active="false">
+          <i class="card__header--check-icon fa-solid fa-circle-check"></i>
+          <span class="card__header--title">Uploaded Successfully!</span>
+        </div>
+      </div>
+
+      <label for="image" class="card__dropzone">
+        <img
+          src="./src/assets/landscape.svg"
+          alt="A landscape image within the drag and drop zone."
+          class="card__dropzone--placeholder"
+        >
+        <span class="card__dropzone--placeholder">
+          Drag & Drop your image here
+        </span>
+        
+        <img src="" class="image-preview">
+      </label>
+      
+      <div class="card__footer">
+        <div class="card__footer--initial-state" data-active="true">
+          <span>Or</span>
+          <label for="image" class="card__file-btn">Choose a file</label>
+        </div>
+
+        <div class="card__footer--completed-state" data-active="false">
+          <span></span>
+          <button class="card__copy-link-btn" data-after-active="false">Copy Link</button>
+        </div>
+      </div>
+
+      <input
+        type="file"
+        name="image"
+        id="image"
+        accept="image/*"
+      >
+    </form>
+
+    <!-- Loading card -->
+    <div class="loading-card" data-active="false">
+      <span>Uploading...</span>
+
+      <div class="loading-card__loading-bar"></div>
+    </div>
+  </main>
+
+  <footer>
+    Created by <a href="">Pedro Monteiro</a> - devChallenges.io
+  </footer>
+
+  <script type="module" src="src/main.ts"></script>
+</body>
+</html>
